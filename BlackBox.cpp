@@ -1,3 +1,18 @@
+/* w, s, a, d i (W, S, A, D) – poruszanie się po planszy odpowiednio: w górę, w dół, w lewo i
+prawo;
+• q, Q – wyjście do menu głównego;
+• u, U – undo (cofnij ruch);
+• r, R – redo (powtórz cofnięty ruch);
+• spacja oddanie strzału (gdy kursor jest na dowolnej ścianie);
+• o - na planszy umożliwia zaznaczenie przypuszczalnego położenia atomu;
+• k – kończy rozgrywkę i umożliwia wyświetlenie rozwiązania i liczby uzyskanych punktów
+(poprawnie znalezionych atomów);
+• p – umożliwia wyświetlenie rozwiązania (przerywa etap gry, brak możliwości kontynuowania
+tego etapu gry);
+• H – Help/Pomoc – pokazuje na chwilę umieszczenie atomów na planszy
+• pozostałe pozostają do wyboru przez programistę; Klawisze sterujące powinny być
+zatwierdzane klawiszem enter
+*/
 #include <iostream>
 #include <ctime>
 #include <thread>
