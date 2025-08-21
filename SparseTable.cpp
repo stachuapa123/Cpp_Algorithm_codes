@@ -1,232 +1,265 @@
 #include <iostream>
 using namespace std;
-
-#define INF 10000000
-
-struct lift { // lift structure
-
-    int sx, sy;
-    int ex, ey;
-    int time;
-    int wait;
-
+struct node { //node of a trie
+        int key;
+        node** child = nullptr; //child pointer is allocated to nullptr by default to save more memory
 };
-struct dijk { //dijstra's structure visited and distance
-
-    int dist;
-    bool vis;
-};
-struct dijQ { // heap structure, position and distance (or time)
-    int x;
-    int y;
-    int d;
-};
-
-int distance(int a, int b) // distance beetween hills (format from the task)
+void childAlloc(node& nod, int k) //allocates child pointers
 {
-    if (a >= b)
-        return 1;
-    return b - a + 1;
-
-}
-void swaph(dijQ& a, dijQ& b) // swapper
-{
-    dijQ tmp = a;
-    a = b;
-    b = tmp;
-}
-void hMinTop(dijQ heap[], int siz) // heapify the top of the heap
-{
-    int pos = siz;
-        while (pos > 0) //put a node higher if it is smaller than its parent
-    {
-        int par = (pos - 1) / 2;
-        if (heap[pos].d < heap[par].d)
+        if (nod.child == nullptr) //but only if the child pointer is not allocated yet
         {
-            swaph(heap[pos], heap[par]);
-            pos = par;
+                nod.child = new node * [k];
+                for (int i = 0; i < k; i++)
+                        nod.child[i] = nullptr;
         }
-        else
-            break; //and break if it isn't
-    }
 }
-void hpush(dijQ heap[], int d, int x, int y, int& siz) //adding a new element to the heap
+void addnode(node& nod, int x) //adds a value to the node
 {
-    heap[siz].d = d;
-    heap[siz].x = x;
-    heap[siz].y = y;
-    hMinTop(heap, siz);
-    siz++;
+        nod.key = x;
+        nod.child = nullptr;
+
 }
-void hfall(dijQ heap[], int siz, int h) // choosing the smallest distance element after putting the last heapnode on the top
+void insert2(node& nod, int x, int xdv, int k) // inserts a value into the trie, it is another function to avoid sending so many parameters by recursion
 {
-    while (1) {
-
-        int hmin = h;
-        int l = h * 2 + 1;
-        int r = h * 2 + 2;
-
-                if (l < siz && heap[l].d < heap[h].d) //checking whether the left child is smaller than the parent
-            hmin = l;
-
-        if (r < siz && heap[r].d < heap[hmin].d)
-            hmin = r;
-
-                if (h != hmin) //and swapping if it is
+        int pos = xdv % k; //position to allocate
+        if (x == nod.key)
         {
-            swaph(heap[h], heap[hmin]);
-            h = hmin;
+                printf("%d exist\n", x);
+                return; //if the value already exists
         }
+        childAlloc(nod, k); //checks if child pointer allocation is needed
+
+        if (nod.child[pos] != nullptr)
+                insert2(*nod.child[pos], x, xdv / k, k); //going deeper if needed
         else
-            break; //and breaking if neither is
-    }
-}
-dijQ htake(dijQ heap[], int& siz) //popping the top of the heap
-{
-    dijQ top = heap[0];
-    heap[0] = heap[siz - 1];
-    siz--;
-    hfall(heap, siz, 0);
-    return top;
-}
-int waitTime(int d, int w) // calculating the waiting time for the lift
-{
-    if (d % w == 0) //right on time for the lift
-        return 0;
-    return w - d % w; //wait time
-}
-void notLifts(int x, int y, int W, int H, int** tab, dijk** dij, dijQ* heap, int& siz, int* ox, int* oy)
-{
-    for (int ii = 0; ii < 4; ii++)
-    {
-        int tx = x + ox[ii];
-        int ty = y + oy[ii];
-        if (tx >= 0 && ty >= 0 && tx < W && ty < H)
         {
-            if (dij[ty][tx].vis == false)
-            {
-                int nd = dij[y][x].dist + distance(tab[y][x], tab[ty][tx]);
-                if (nd < dij[ty][tx].dist)
+                nod.child[pos] = new node; //here we are in a good position to allocate a new node
+                addnode(*nod.child[pos], x);
+        }
+}
+void insert(node& nod, int x, int n, int k) // inserts a value into the trie
+{
+        int pos = x % n;
+        if (x == nod.key)
+        {
+                printf("%d exist\n", x);
+                return;
+        }
+        childAlloc(nod, k);
+
+        if (nod.child[pos] != nullptr)
+                insert2(*nod.child[pos], x, x/n, k);
+        else
+        {
+                nod.child[pos] = new node;
+                addnode(*nod.child[pos], x);
+        }
+}
+void show2(node& nod, int k)
+{
+        printf("%d ", nod.key); //prints the key of the node
+        if (nod.child == nullptr) //if there are no children, we stop
+                return;
+        for (int i = 0; i < k; i++)
+        {
+                if (nod.child[i] != nullptr) //if it has children in that position, we go deeper
                 {
-                    dij[ty][tx].dist = nd;
-                    hpush(heap, nd, tx, ty, siz);
+                        show2(*nod.child[i], k);
                 }
-            }
         }
-    }
 }
-void withLifts(int x, int y, lift* Li, int li, dijk** dij, dijQ* heap, int& siz, bool& nextdif)
+void show(node& nod, int n, int k)
 {
-    for (int i = 0; i < li; i++)
-    {
-        if (x == Li[i].sx && y == Li[i].sy && dij[Li[i].ey][Li[i].ex].vis == false)
+        printf("%d ", nod.key);
+        if (nod.child == nullptr) //if there are no children, we stop
+                return;
+        for (int i = 0; i < n; i++)
         {
-            nextdif = true;
-            int tx = Li[i].ex;
-            int ty = Li[i].ey;
-            int nd = dij[y][x].dist + Li[i].time + waitTime(dij[y][x].dist, Li[i].wait);
-            if (nd < dij[ty][tx].dist)
-            {
-                dij[ty][tx].dist = nd;
-                hpush(heap, nd, tx, ty, siz);
-            }
+                if (nod.child[i] != nullptr)
+                {
+                        show2(*nod.child[i],k);
+                }
         }
-    }
-
 }
-void dijkstra(int H, int W, int sx, int sy, int ex, int ey, lift* Li, int li, dijk** dij, int** tab, int difsp)
+bool look2(node& nod, int x, int xdv, int k)
 {
-    dijQ* heap = new dijQ[H * W]; // heap tab
-        int siz = 0; //size of the heap
-    int x = sx, y = sy;
-        int ox[4] = { 0, 0, 1, -1 }; //fixed arrays for smooth neighbour checking
-    int oy[4] = { 1, -1, 0, 0 };
-
-    dij[y][x].dist = 0;
-        hpush(heap, 0, sx, sy, siz); //pushing the startpoint to the heap
-
-    int sp = 0; //startpoints
-
-        while (1)// loop until we find the destination
-    {
-        dijQ closest = htake(heap, siz); //taking element from min heap
-        x = closest.x;
-        y = closest.y;
-
-        if (x < 0 || x >= W || y < 0 || y >= H) //out of bounds
+        if (nod.key == x) //this is the key we are looking for
         {
-            continue;
+                return true;
         }
-
-                if (dij[y][x].vis == true) //we have already visited this node and have the smallest possible distance
-            continue;
-
-        dij[y][x].vis = true;
-
-        if (x == ex && y == ey) //destination reached
+        else
         {
-            cout << closest.d << endl;
-            break;
+                int pos = xdv % k;
+                if (nod.child != nullptr && nod.child[pos] != nullptr) //checks whether it has children and if there is a child in the right place
+                {
+                        return look2(*nod.child[pos], x, xdv / k, k); //and goes deeper if it is the case
+                }
+                else
+                        return false; //and stops when it is not the case
         }
-
-        bool nextdif = false; // if we used the lifts from current point
-
-        if (sp < difsp)
+}
+bool look(node& nod, int x, int n, int k)
+{
+        if (nod.key == x)
         {
-                        withLifts(x, y, Li, li, dij, heap, siz, nextdif); //checking the lifts from the current position
+                return true;
         }
+        else
+        {
+                int pos = x % n;
+                if (nod.child != nullptr && nod.child[pos] != nullptr)
+                {
+                        return look2(*nod.child[pos], x, x / n, k);
+                }
+                else
+                        return false;
+        }
+}
 
-        if (nextdif)
-                        sp++;  //if lifts from all points are used we can stop checking them
+int leftLeaf(node*& nod, int k) // finds the leftmost leaf in the trie and deletes it
+{
+        for (int i = 0; i < k; i++)
+        {
+                if (nod->child != nullptr && nod->child[i] != nullptr)
+                {
+                        return leftLeaf(nod->child[i], k); //goes deeper if there is the first (leftmost) child
+                }
+        }
+        int rep = nod->key; //deletes the node with the leftmost leaf and returns its key
+        delete nod;
+        nod = nullptr;
+        return rep;
+}
+void dell2(node*& nod, int x, int xdv, int k)
+{
+        if (nod->key == x) //here we found the node we are looking for
+        {
+                bool b = true; //it is a flag to check if the node is a leaf or not
+                if (nod->child != nullptr)
+                {
+                        for (int i = 0; i < k; i++)
+                        {
+                                if (nod->child[i] != nullptr) //here we found that the node has children, we are going to set the current's nodde value for leftmost child
+                                {
+                                        int ll = leftLeaf(nod->child[i], k);
+                                        nod->key = ll;
+                                        b = false;
+                                        break;
+                                }
+                        }
+                }
+                if(b)
+                {
+                        delete nod;  // here it indicates that deleted value is a leaf, we just delete the node
+                        nod = nullptr;
+                }
 
-                notLifts(x, y, W, H, tab, dij, heap, siz, ox, oy); //checking the neighbours of the current position
-    }
-    delete[] heap;
+        }
+        else
+        {
+                int pos = xdv % k;
+                if (nod->child != nullptr && nod->child[pos] != nullptr)//checks if it there is any child and than if there is a child in the right place
+                {
+                        dell2(nod->child[pos], x, xdv / k, k); //here it goes deeper because the node has a child in the right place
+                }
+                else
+                {
+                        printf("%d not exist\n", x); // here we know the node we want to delete does not exist
+                }
+
+        }
+}
+void dell(node& nod, int x, int n, int k)
+{
+        if (nod.key == x)
+        {
+                if (nod.child != nullptr)
+                {
+                        for (int i = 0; i < n; i++)
+                        {
+                                if (nod.child[i] != nullptr)
+                                {
+                                        int ll = leftLeaf(nod.child[i], k);
+                                        nod.key = ll;
+                                        break;
+                                }
+                        }
+                }
+        }
+        else
+        {
+                int pos = x % n;
+                if (nod.child != nullptr && nod.child[pos] != nullptr)
+                {
+                    dell2(nod.child[pos], x, x / n, k);
+                }
+                else
+                {
+                        printf("%d not exist\n", x);
+                }
+
+        }
 }
 int main()
 {
-        int W, H; // width and height of the map
-    int sx, sy; // start position
-    int ex, ey; // end position
-        int li; // number of lifts
-    scanf("%d %d %d %d %d %d %d", &W, &H, &sx, &sy, &ex, &ey, &li);
-
-        int** tab = new int* [H]; //declaring input array
-    for (int i = 0; i < H; i++)
-        tab[i] = new int[W];
-
-    dijk** dij = new dijk * [H];
-    for (int i = 0; i < H; i++)
-        dij[i] = new dijk[W];
-
-    lift* Li = new lift[li];
-    int difsp = 1; // different startpoints
-
-    for (int i = 0; i < li; i++)
-    {
-        scanf("%d %d %d %d %d %d", &Li[i].sx, &Li[i].sy, &Li[i].ex, &Li[i].ey, &Li[i].time, &Li[i].wait);
-
-        if (i > 0 && (Li[i].sx != Li[i - 1].sx || Li[i - 1].sy != Li[i].sy)) //if lift startpoints are different, we note it
-            difsp++;
-    }
-
-        for (int i = 0; i < H; i++) //default values for dijkstra's algorithm arrays
-        for (int j = 0; j < W; j++)
+        int N; //number of inputs
+        int mx, mi; //maximum and minimum values (not used for the code)
+        int n, k; //n - size of the child array in root, k - size of the child array in other nodes
+        scanf("%d %d %d %d %d", &N, &mx, &mi, &n, &k);
+        char q;
+        int x;
+        node root; //data structure variable for this task, it is not a reference so I cannot delete the root, I can only delete its children
+        int siz = 0; //so I implemented a variable for counting the number of elements
+        for(int i=0;i<N;i++)
         {
-            scanf("%d", &tab[i][j]);
-            dij[i][j].dist = INF;
-            dij[i][j].vis = false;
+                scanf(" %c", &q);
+                if (q == 'I')
+                {
+                        scanf("%d", &x);
+                        if (siz == 0) //size is 0, we add the first element and allocate child nodes pointers, siz will be equal to 0 only once
+                        {
+                                addnode(root, x);
+                                childAlloc(root, n);
+                        }
+                        else if (siz == -1) // siz is -1, when all elements were previously deleted
+                        {
+                                root.key = x; //we set the root key fot element from input, but now we can print it, siz will be equal to 1 after that
+                                siz++;
+                        }
+                        else
+                        {
+                                insert(root, x, n, k); //inserting the element
+                        }
+                        siz++;
+                }
+                else if (q == 'P')//showing all elements in inorder
+                {
+                        if(siz > 0)
+                                show(root,n,k);
+                }
+                else if (q == 'L')//looks if there is an inputed number
+                {
+                        scanf("%d", &x);
+                        if (look(root, x, n, k) && siz > 0) //and checks additionally if size of the trie is greater than 0
+                                printf("%d exist\n", x);
+                        else
+                                printf("%d not exist\n", x);
+                }
+                else if (q == 'D')
+                {
+                        scanf("%d", &x);
+
+                        if (siz == 1)
+                        {//it still stores the int value of the the deleted root element, but it can never be shown but can be changed more quickly in the next step
+                                siz = -1;
+                                if (root.key != x)
+                                        printf("%d not exist\n", x);
+                        }
+                        else
+                        {
+                                dell(root, x, n, k);
+                                siz--;
+                        }
+                }
         }
-
-        dijkstra(H, W, sx, sy, ex, ey, Li, li, dij, tab, difsp); //dijkstra's algorithm
-
-    delete[] Li; //destructors
-    for (int i = 0; i < H; i++)
-        delete[] dij[i];
-    delete[] dij;
-
-    for (int i = 0; i < H; i++)
-        delete[] tab[i];
-    delete[] tab;
-    return 0;
 }
