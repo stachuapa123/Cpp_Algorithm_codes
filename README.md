@@ -5,3 +5,4 @@ Cpp algotihms and data structures codes and games
 - [Dijkstra](./DijkstraBoard.cpp)
 - [Sparse Table](./SparseTable.cpp)
 ## Codes for Games
+- [Frogger](./Frogger.cpp)
