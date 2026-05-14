@@ -6,3 +6,4 @@ Cpp algotihms and data structures codes and games
 - [Sparse Table](./SparseTable.cpp)
 ## Codes for Games
 - [Frogger](./Frogger.cpp)
+- [BlackBox](./Blackbox.cpp)
