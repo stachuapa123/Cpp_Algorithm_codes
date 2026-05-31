@@ -1,99 +1,100 @@
 ﻿  main.cpp
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(310,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(360,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(364,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(380,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(381,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(382,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(383,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(353,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(356,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(357,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(358,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(360,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(361,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(362,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(364,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(365,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(366,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(368,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(369,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(370,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(371,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(372,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(373,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(374,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(375,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(376,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(377,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(378,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(380,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(381,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(382,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(383,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(384,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(385,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(390,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(391,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(440,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(443,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(452,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(459,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(460,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(461,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(467,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(563,47): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(563,39): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(568,51): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(568,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(570,71): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(570,46): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(573,97): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(573,54): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(580,51): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(580,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(582,71): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(582,46): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(584,75): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(584,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(587,39): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(587,31): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(589,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(589,38): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(591,63): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(591,38): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(593,59): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(593,38): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(595,46): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(595,35): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(600,57): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(600,49): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(602,86): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(602,77): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(602,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(602,40): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(608,57): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(608,49): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(610,86): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(610,77): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(610,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(610,40): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(627,38): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(630,38): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(635,91): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(641,42): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(617,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(621,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(626,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(629,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(640,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(767,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(855,49): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(876,65): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(890,49): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(874,29): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(898,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(748,27): warning C4101: "frames": lokalna zmienna, do której nie istnieje odwołanie
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(749,30): warning C4101: "distance": lokalna zmienna, do której nie istnieje odwołanie
-C:\Users\mmapa\Desktop\Snake_SDL\main.cpp(748,35): warning C4101: "rc": lokalna zmienna, do której nie istnieje odwołanie
-  snake.vcxproj -> C:\Users\mmapa\Desktop\Snake_SDL\x64\Debug\snake.exe
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(310,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(360,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(364,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(380,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(381,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(382,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(383,18): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „bool *”
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(353,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(356,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(357,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(358,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(360,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(361,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(362,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(364,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(365,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(366,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(368,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(369,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(370,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(371,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(372,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(373,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(374,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(375,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(376,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(377,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(378,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(380,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(381,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(382,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(383,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(384,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(385,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(390,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(391,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(440,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(443,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(452,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(459,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(460,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(461,13): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(467,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(563,47): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(563,39): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(568,51): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(568,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(570,71): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(570,46): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(573,97): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(573,54): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(580,51): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(580,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(582,71): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(582,46): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(584,75): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(584,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(587,39): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(587,31): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(589,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(589,38): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(591,63): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(591,38): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(593,59): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(593,38): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(595,46): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(595,35): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(600,57): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(600,49): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(602,86): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(602,77): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(602,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(602,40): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(608,57): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(608,49): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(610,86): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(610,77): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(610,60): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(610,40): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(627,38): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(630,38): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(635,91): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(641,42): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(617,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(621,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(626,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(629,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(640,9): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(767,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(855,49): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(876,65): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(890,49): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(874,29): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(898,13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(748,27): warning C4101: "frames": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(749,30): warning C4101: "distance": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\main.cpp(748,35): warning C4101: "rc": lokalna zmienna, do której nie istnieje odwołanie
+  LINK : nie znaleziono elementu C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\x64\Debug\snake.exe ani nie został on skompilowany podczas ostatniego konsolidowania przyrostowego; zostanie wykonana pełna konsolidacja
+  snake.vcxproj -> C:\Users\mmapa\Desktop\Naprawa gita\Cpp_Algorithm_codes\Snake_SDL\x64\Debug\snake.exe
